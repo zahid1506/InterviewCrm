@@ -40,10 +40,10 @@ public class LoginPOM extends TestBase {
 		pwd.sendKeys(prop.getProperty("password"));
 		loginbutton.click();
 		
-		// i m from git
+		// i change from git
 		
 	}
 		
-	// i m from eclipse again
+	
     
 }
