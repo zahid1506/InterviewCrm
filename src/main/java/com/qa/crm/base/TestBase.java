@@ -7,12 +7,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 
 public class TestBase {
 	public static Properties prop;
@@ -46,10 +43,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
-		Wait wait=new FluentWait(driver)
-				.withTimeout(20, TimeUnit.SECONDS)
-				.pollingEvery(5, TimeUnit.SECONDS)
-				.ignoring(ElementNotVisibleException.class);
+		
 		        
 		
 		
