@@ -45,7 +45,7 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(20,TimeUnit.SECONDS);
 		
 		        
-		
+		//changes from git 
 		
 	}
 }
